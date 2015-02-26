@@ -12,21 +12,28 @@ set softtabstop=2
 set expandtab
 
 "NeoBundle Scripts-----------------------------
+" Note: Skip initialization for vim-tiny or vim-small.
+if !1 | finish | endif
+
 if has('vim_starting')
-  set nocompatible               " Be iMproved
+  if &compatible
+    set nocompatible               " Be iMproved
+  endif
 
   " Required:
-  set runtimepath+=/home/kenji/.vim/bundle/neobundle.vim/
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
 " Required:
-call neobundle#begin(expand('/home/kenji/.vim/bundle'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " My Bundles here:
+" Refer to |:NeoBundle-examples|.
+" Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
@@ -40,13 +47,8 @@ NeoBundle 'majutsushi/tagbar'
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=2
 
-NeoBundle 'Shougo/neocomplcache.vim'
-let g:neocomplcache_enable_at_startup = 1
+NeoBundle 'Shougo/vimshell'
 
-" You can specify revision/branch/tag.
-NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
-
-" Required:
 call neobundle#end()
 
 " Required:
