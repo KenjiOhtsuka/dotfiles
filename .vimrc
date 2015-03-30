@@ -1,3 +1,7 @@
+let php_parent_error_close = 1
+let php_sql_query = 1
+au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
+
 set number
 "改行時に前のインデントを継続する
 set autoindent
@@ -10,6 +14,8 @@ set tabstop=2
 "連続した空白に対して tab, backspace で移動する幅
 set softtabstop=2
 set expandtab
+set colorcolumn=80
+set wrap
 
 "NeoBundle Scripts-----------------------------
 " Note: Skip initialization for vim-tiny or vim-small.
@@ -36,9 +42,13 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'Shougo/neocomplete'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/unite-outline'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'kchmck/vim-coffee-script'
 
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/syntastic'
@@ -59,3 +69,4 @@ filetype plugin indent on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
+syntax on
