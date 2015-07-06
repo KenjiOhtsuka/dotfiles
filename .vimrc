@@ -10,6 +10,7 @@ set tabstop=2
 "連続した空白に対して tab, backspace で移動する幅
 set softtabstop=2
 set expandtab
+colorscheme torte
 
 "NeoBundle Scripts-----------------------------
 if has('vim_starting')
@@ -45,6 +46,8 @@ let g:neocomplcache_enable_at_startup = 1
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler'
 
 " Required:
 call neobundle#end()
