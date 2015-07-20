@@ -11,6 +11,8 @@ set tabstop=2
 set softtabstop=2
 set expandtab
 colorscheme torte
+set colorcolumn=80
+set cursorline
 
 "NeoBundle Scripts-----------------------------
 if has('vim_starting')
