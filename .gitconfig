@@ -1,0 +1,7 @@
+[user]
+	email = kok.fdcm@gmail.com
+	name = Kenji Ohtsuka
+[push]
+	default = current
+[core]
+	excludesfile = ~/.gitignore
