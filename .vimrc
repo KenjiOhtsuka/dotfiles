@@ -66,6 +66,7 @@ let g:neocomplcache_enable_at_startup = 1
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
+NeoBundle 'joonty/vdebug'
 
 " Required:
 call neobundle#end()
