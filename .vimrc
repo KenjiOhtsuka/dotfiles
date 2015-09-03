@@ -67,6 +67,8 @@ let g:neocomplcache_enable_at_startup = 1
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'joonty/vdebug'
+NeoBundle 'taglist.vim'
+NeoBundle 'tpope/vim-rails'
 
 " Required:
 call neobundle#end()
