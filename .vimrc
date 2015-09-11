@@ -81,9 +81,12 @@ filetype plugin indent on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
+let NERDTreeShowHidden = 1
+
 let Tlist_Use_Right_Window = 1
 
 syntax on
 
 autocmd VimEnter * execute 'NERDTree'
 autocmd VimEnter * execute 'Tlist'
+autocmd VimEnter * wincmd l
