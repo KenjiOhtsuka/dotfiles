@@ -16,7 +16,9 @@ set softtabstop=2
 set expandtab
 colorscheme torte
 set colorcolumn=80
+hi CursorColumn term=underline cterm=underline
 set cursorline
+set cursorcolumn
 set wrap
 
 "NeoBundle Scripts-----------------------------
