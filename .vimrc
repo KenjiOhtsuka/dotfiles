@@ -14,9 +14,8 @@ set tabstop=2
 "連続した空白に対して tab, backspace で移動する幅
 set softtabstop=2
 set expandtab
-colorscheme torte
+colorscheme elflord
 set colorcolumn=80
-hi CursorColumn term=underline cterm=underline
 set cursorline
 set cursorcolumn
 set wrap
@@ -92,3 +91,5 @@ syntax on
 autocmd VimEnter * execute 'NERDTree'
 autocmd VimEnter * execute 'Tlist'
 autocmd VimEnter * wincmd l
+
+hi CursorColumn term=underline cterm=underline
