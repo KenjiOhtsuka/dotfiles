@@ -10,4 +10,4 @@ Execute copy.sh, and dot files will be copied to your home directory.
 
 * .vimrc
   * Neobundle: Please install neobundle.
-  * ctags: `apt-get install exuberant-ctags`
+  * ctags: `apt-get install exuberant-ctags` / `brew install ctags`
