@@ -15,6 +15,9 @@ set tabstop=2
 set softtabstop=2
 set expandtab
 colorscheme elflord
+if system('uname') =~ 'Darwin'
+  colorscheme torte
+endif
 set colorcolumn=80
 set cursorline
 set cursorcolumn
@@ -49,7 +52,7 @@ NeoBundle 'Shougo/neocomplete'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'kchmck/vim-coffee-script'
 
