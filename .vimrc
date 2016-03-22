@@ -103,5 +103,5 @@ autocmd VimEnter * wincmd l
 hi CursorColumn term=underline cterm=underline
 colorscheme elflord
 if system('uname') =~ 'Darwin'
-  colorscheme earendel
+  colorscheme Monokai
 endif
