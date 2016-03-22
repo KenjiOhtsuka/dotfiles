@@ -63,6 +63,15 @@ NeoBundle 'majutsushi/tagbar'
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=2
 
+NeoBundle 'Shougo/vimproc', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/neocomplcache.vim'
 let g:neocomplcache_enable_at_startup = 1
