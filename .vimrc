@@ -176,3 +176,7 @@ endif
 
 " PHP
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+"" Include user's local vim config
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
