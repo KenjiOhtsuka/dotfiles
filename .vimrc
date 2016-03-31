@@ -1,5 +1,3 @@
-let php_parent_error_close = 1
-let php_sql_query = 1
 au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
 
 set number
@@ -96,6 +94,9 @@ NeoBundle 'joonty/vdebug'
 NeoBundle 'taglist.vim'
 NeoBundle 'tpope/vim-rails'
 
+" for php
+NeoBundle 'tobyS/pdv'
+
 " Required:
 call neobundle#end()
 
@@ -176,6 +177,10 @@ endif
 
 " PHP
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+let php_parent_error_close = 1
+let php_sql_query = 1
+let g:pdv_template_dir = $HOMR."/.vim/bundle/pdv/templates_snip"
+nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
 "" Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
