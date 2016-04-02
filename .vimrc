@@ -17,6 +17,8 @@ set cursorline
 set cursorcolumn
 set wrap
 
+let g:pdv_template_dir = $HOMR."/.vim/bundle/pdv/templates_snip"
+
 "NeoBundle Scripts-----------------------------
 " Note: Skip initialization for vim-tiny or vim-small.
 if !1 | finish | endif
@@ -137,11 +139,11 @@ if !exists('g:airline_symbols')
 endif
 
 " vim-airline
-let g:airline_theme = 'powerlineish'
+let g:airline_theme = 'term'
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tagbar#enabled = 1
+let g:airline#extensions#tagbar#enabled = 0
 let g:airline#extensions#virtualenv#enabled = 1
 
 if !exists('g:airline_powerline_fonts')
@@ -179,7 +181,6 @@ endif
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 let php_parent_error_close = 1
 let php_sql_query = 1
-let g:pdv_template_dir = $HOMR."/.vim/bundle/pdv/templates_snip"
 nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
 "" Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
