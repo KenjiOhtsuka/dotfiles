@@ -8,7 +8,7 @@ isDifferent() {
 
 copyIfDifferent() {
   isDifferent "$1" "$2"
-  if [ $? -eq 1 ]; then
+  if [ $? -ne 0 ]; then
     cp -iv "$1" "$2"
   fi
 }
