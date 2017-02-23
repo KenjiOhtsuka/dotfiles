@@ -119,8 +119,10 @@ syntax on
 autocmd VimEnter * execute 'NERDTree'
 autocmd VimEnter * execute 'Tlist'
 autocmd VimEnter * wincmd l
+autocmd BufEnter * execute 'NERDTreeMirror'
 
 hi CursorColumn term=underline cterm=underline
+hi CursorColumn cterm=NONE ctermbg=gray ctermfg=white guibg=gray guifg=white
 colorscheme elflord
 if system('uname') =~ 'Darwin'
   colorscheme Monokai
