@@ -8,5 +8,8 @@
 	editor = /usr/bin/vim
 [credential]
 	helper = cache --timeout=86400
+[alias]
+	st = status
+	lg = log --decorate --all --graph --oneline
 [diff]
 	tool = vimdiff
