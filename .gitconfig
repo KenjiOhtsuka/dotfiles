@@ -11,5 +11,6 @@
 [alias]
 	st = status
 	lg = log --decorate --all --graph --oneline
+  mg = merge --no-ff
 [diff]
 	tool = vimdiff
