@@ -95,6 +95,8 @@ NeoBundle 'Shougo/vimfiler'
 NeoBundle 'joonty/vdebug'
 NeoBundle 'taglist.vim'
 NeoBundle 'tpope/vim-rails'
+" input `if` and press enter then `end` will be inserted
+NeoBundle 'tpope/vim-endwise'
 
 " for php
 NeoBundle 'tobyS/pdv'
@@ -121,7 +123,6 @@ autocmd VimEnter * execute 'Tlist'
 autocmd VimEnter * wincmd l
 autocmd BufEnter * execute 'NERDTreeMirror'
 
-hi CursorColumn term=underline cterm=underline
 hi CursorColumn cterm=NONE ctermbg=gray ctermfg=white guibg=gray guifg=white
 colorscheme elflord
 if system('uname') =~ 'Darwin'
@@ -188,3 +189,5 @@ nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+hi CursorColumn term=underline cterm=underline
