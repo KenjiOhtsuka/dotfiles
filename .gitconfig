@@ -13,8 +13,9 @@
 	lg = log --decorate --all --graph --oneline
   m = merge --no-ff
 	c = commit
-	b = branch
+	b = branch -vv
 	d = diff
 	co = checkout
+  a = add
 [diff]
 	tool = vimdiff
