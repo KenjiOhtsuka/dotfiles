@@ -11,6 +11,10 @@
 [alias]
 	st = status
 	lg = log --decorate --all --graph --oneline
-  mg = merge --no-ff
+  m = merge --no-ff
+	c = commit
+	b = branch
+	d = diff
+	co = checkout
 [diff]
 	tool = vimdiff
