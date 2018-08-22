@@ -191,3 +191,4 @@ if filereadable(expand("~/.vimrc.local"))
 endif
 
 hi CursorColumn term=underline cterm=underline
+hi CursorLine term=underline cterm=underline
